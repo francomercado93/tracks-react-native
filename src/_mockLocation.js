@@ -1,3 +1,5 @@
+// TODO: arreglar ubicacion inicial longitude: -122.084 de donde sale ?
+
 import * as Location from 'expo-location';
 
 const tenMetersWithDegrees = 0.0001;
@@ -11,7 +13,7 @@ const getLocation = increment => {
             accuracy: 5,
             altitudeAccuracy: 5,
             altitude: 5,
-            longitude: -58.379222 + increment * tenMetersWithDegrees,
+            longitude: -58.379222 - increment * tenMetersWithDegrees,
             latitude: -34.603681 + increment * tenMetersWithDegrees
         }
     };
