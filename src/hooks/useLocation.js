@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Accuracy, requestPermissionsAsync, watchPositionAsync } from 'expo-location';
+import '../_mockLocation';
 
 export default (shouldTrack, callback) => {
 
@@ -17,7 +18,6 @@ export default (shouldTrack, callback) => {
                 },
                     callback
                 );
-                setSubscriber(sub);
             } catch (e) {
                 setErr(e);
             }

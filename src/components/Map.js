@@ -11,7 +11,7 @@ const Map = () => {
         return <ActivityIndicator size="large" style={{ marginTop: 200 }} />;
     }
 
-    console.log(currentLocation);
+    // console.log(currentLocation);
     return (
         <MapView
             style={styles.map}
