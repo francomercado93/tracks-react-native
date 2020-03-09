@@ -2,7 +2,8 @@ import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
 
-const TrackDetailScreen = () => {
+const TrackDetailScreen = ({navigation}) => {
+    const _id = navigation.getParam('_id');
     return <Text style={{ fontSize: 48 }}>TrackDetailScreen</Text>
 }
 
